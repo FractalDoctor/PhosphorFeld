@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhosphorFeld - Hellschreiber Decoder</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #0a0a0a;
+            color: #20e820;
+            font-family: "SF Mono", "Menlo", "Monaco", "Courier New", monospace;
+            font-size: 14px;
+            line-height: 1.6;
+            padding: 40px 20px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .border-top, .border-bottom {
+            color: #18b018;
+            white-space: pre;
+            overflow: hidden;
+            font-size: 13px;
+        }
+        h1 {
+            color: #20e820;
+            font-size: 22px;
+            font-weight: normal;
+            text-align: center;
+            padding: 20px 0 4px 0;
+            letter-spacing: 3px;
+        }
+        .tagline {
+            text-align: center;
+            color: #108010;
+            padding: 0 0 20px 0;
+            font-size: 13px;
+        }
+        h2 {
+            color: #20e820;
+            font-size: 14px;
+            font-weight: normal;
+            padding: 16px 0 8px 0;
+            letter-spacing: 1px;
+        }
+        p, li {
+            color: #18c018;
+            padding: 4px 0;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li::before {
+            content: "> ";
+            color: #20e820;
+        }
+        a {
+            color: #20e820;
+        }
+        .content {
+            padding: 0 16px;
+        }
+        .links {
+            padding-top: 20px;
+            font-size: 13px;
+        }
+        .links a {
+            display: inline-block;
+            margin-right: 24px;
+            text-decoration: none;
+        }
+        .links a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<div class="border-top">&#9484;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9488;</div>
+
+<h1>&#9651; PHOSPHORFELD</h1>
+<div class="tagline">Hellschreiber Decoder for iPhone.</div>
+
+<div class="content">
+
+<p>PhosphorFeld decodes Feld-Hell (Hellschreiber) signals in real time using your iPhone's microphone. Point your phone at any HF receiver tuned to a Hellschreiber signal and watch the letters paint themselves onto your screen, pixel by pixel, exactly as they did in 1929.</p>
+
+<p>No internet connection required. No external hardware. No account. Just your iPhone and a radio.</p>
+
+<h2>FEATURES</h2>
+<ul>
+    <li>Real-time Feld-Hell decoding via microphone or line input</li>
+    <li>Scrolling glyph strip display with greyscale &ldquo;fuzzy&rdquo; presentation</li>
+    <li>Automatic tone detection and tracking (AFC)</li>
+    <li>FFT spectrum analyser and waterfall display</li>
+    <li>Real-time envelope trace showing the on/off keying pattern</li>
+    <li>Session logging with bitmap strip storage and PNG export</li>
+    <li>Amber and green phosphor CRT colour themes</li>
+    <li>Adjustable squelch, gain, and pixel contrast</li>
+    <li>No accounts, no tracking, no network access</li>
+</ul>
+
+<h2>ABOUT HELLSCHREIBER</h2>
+<p>Hellschreiber was invented by Rudolf Hell in 1929 &mdash; a facsimile teleprinter that transmitted the shapes of characters rather than their codes. Unlike RTTY which sends character codes, Hell transmits the actual pixel bitmap of each character as an on/off keyed audio tone. The receiver paints the characters onto a scrolling strip. There is no character decoding &mdash; the human eye reads the painted glyphs.</p>
+
+<p>Feld-Hell is the standard amateur variant: 122.5 baud pixel rate, OOK modulation, 980 Hz audio tone. Used by the Wehrmacht in WWII and adopted by radio amateurs in the 1990s, it remains the only digital mode where the decoder is the human eye.</p>
+
+<h2>WHERE TO FIND HELL</h2>
+<ul>
+    <li>20m band: 14.063 MHz</li>
+    <li>40m band: 7.035 MHz</li>
+    <li>80m band: 3.580 MHz</li>
+    <li>30m band: 10.137 MHz</li>
+</ul>
+<p>A shortwave receiver, SDR, or WebSDR audio played through a speaker is all you need.</p>
+
+<h2>SUPPORT</h2>
+<p>Need help? Have a question, bug report, or feature request?</p>
+<ul>
+    <li><a href="https://github.com/FractalDoctor/PhosphorFeld/issues/new?labels=question&template=blank" target="_blank" rel="noopener">Ask a question</a> &mdash; get help with using PhosphorFeld</li>
+    <li><a href="https://github.com/FractalDoctor/PhosphorFeld/issues/new?labels=bug" target="_blank" rel="noopener">Report a bug</a> &mdash; let us know if something isn't working</li>
+    <li><a href="https://github.com/FractalDoctor/PhosphorFeld/issues/new?labels=enhancement" target="_blank" rel="noopener">Request a feature</a> &mdash; suggest improvements or new functionality</li>
+</ul>
+<p>You can also browse <a href="https://github.com/FractalDoctor/PhosphorFeld/issues" target="_blank" rel="noopener">existing issues</a> to see if your question has already been answered.</p>
+
+<div class="links">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="tests.html">Decoder Test Report</a>
+    <a href="https://github.com/FractalDoctor/PhosphorFeld/issues">Support &amp; Issues</a>
+</div>
+
+</div>
+
+<div class="border-bottom" style="padding-top: 24px;">&#9492;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9496;</div>
+
+</body>
+</html>
